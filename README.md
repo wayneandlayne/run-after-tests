@@ -14,7 +14,7 @@ The commands are configured in Preferences->Run After Tests.
 Installation
 ============
 I need to make sure this works for more than just me before submitting to the JetBrains plugin repository, so for now,
-download the RunAfterTests.jar, and install it through your IDE in Preferences->Plugins.
+download the RunAfterTests.jar from https://github.com/wayneandlayne/run-after-tests/releases, and install it through your IDE in Preferences->Plugins.
 
 Let me know if it works (or doesn't!) for you.
 
