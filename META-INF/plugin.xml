@@ -1,0 +1,42 @@
+<idea-plugin version="2">
+  <id>com.wayneandlayne.runaftertests</id>
+  <name>Run After Tests</name>
+  <version>0.1</version>
+  <vendor email="wayneandlayne@wayneandlayne.com" url="http://www.wayneandlayne.com">Wayne and Layne, LLC</vendor>
+
+  <description><![CDATA[
+          Run After Tests is a simple plugin that allows you to run a command after the test suite completes.  A different
+          command can be run after all the tests succeeded than when some of the tests fail.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      v0.1 - Initial release.
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- enable plugin in all products -->
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+      <testStatusListener implementation="com.wayneandlayne.runaftertests.MyTestStatusListener" />
+      <applicationConfigurable implementation="com.wayneandlayne.runaftertests.Configuration"></applicationConfigurable>
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
